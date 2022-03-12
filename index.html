@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+<div class="container">
+    <header class="header">
+        <h1 id="title" class="text-center">snap tv</h1>
+        <p id="description" class="text-center">Thank you for taking the time to help us improve the platform</p>
+    </header>
+    <form action="#" id="survey-form">
+        <div class="group-form">
+            <label id="name-label" for="name">Name</label>
+            <input type="text" name="name" id="name"  class="form-control" placeholder="Jhon Wick" required>
+        </div>
+        <div class="group-form">
+            <label id="email-label"  for="email-label">Email</label>
+            <input type="email" name="email" id="email" class="form-control" placeholder="Enter your Email" required>
+        </div>
+        <div class="group-form">
+            <label id="number-label" for="number-label">Age </label>
+            <input type="number" name="age" id="number" min="13" max="99" class="form-control" placeholder="Age" required>
+        </div>
+        <div class="group-form">
+            <p>tell us how you found out of snap tv</p>
+            <select name="found-snap" id="dropdown" class="form-control" required>
+                <option disabled selected value> Select one</option>
+                <option value="Facebook">Facebook</option>
+                <option value="Google Search">Google Search</option>
+                <option value="Friends">Friends</option>
+                <option value="Youtube Ad">Youtube</option>
+                <option value="instagram">Instagram</option>
+            </select>
+        </div>
+    </form>
+</div>
+</body>
+</html>
