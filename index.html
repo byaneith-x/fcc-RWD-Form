@@ -8,25 +8,29 @@
     <title>Document</title>
 </head>
 <body>
+    <!-- full page container -->
 <div class="container">
+    <!-- header -->
     <header class="header">
         <h1 id="title" class="text-center">snap tv</h1>
         <p id="description" class="text-center">Thank you for taking the time to help us improve the platform</p>
     </header>
+    <!-- this is the form 
+     this form don't have  url for action this is only and exercise-->
     <form action="#" id="survey-form">
-        <div class="group-form">
+        <div class="form-group">
             <label id="name-label" for="name">Name</label>
             <input type="text" name="name" id="name"  class="form-control" placeholder="Jhon Wick" required>
         </div>
-        <div class="group-form">
+        <div class="form-group">
             <label id="email-label"  for="email-label">Email</label>
             <input type="email" name="email" id="email" class="form-control" placeholder="Enter your Email" required>
         </div>
-        <div class="group-form">
+        <div class="form-group">
             <label id="number-label" for="number-label">Age </label>
             <input type="number" name="age" id="number" min="13" max="99" class="form-control" placeholder="Age" required>
         </div>
-        <div class="group-form">
+        <div class="form-group">
             <p>tell us how you found out of snap tv</p>
             <select name="found-snap" id="dropdown" class="form-control" required>
                 <option disabled selected value> Select one</option>
@@ -37,7 +41,74 @@
                 <option value="instagram">Instagram</option>
             </select>
         </div>
+        <div class="form-group">
+            <p>Would you recommend snap tv to a friend?</p>
+            <label>
+                <input name="user-recomend"  class="input radio" value="definitely" type="radio" checked>
+                for sure (papa) 
+            </label>
+            <label>
+                <input  name="user-recomend"  class="input-radio" value="maybe"  type="radio">
+                Maybe 
+            </label>
+            <label>
+                <input   name="user-recomend" class="input-radop" value="Not Sure" type="radio">
+                Not sure
+            </label>
+        </div>
+        <div class="form-group">
+            <p>which version of snap tv use</p>
+            <select name="version of snap" id="dropdown" class="form-control" required>
+                <option disabled selected value> Select one</option>
+                <option value="premium">Premium</option>
+                <option value="standard">Standard</option>
+                <option value="basic">Basic</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <p>What would you like to see improved? <span class="check">(Check all that apply)</span> </p>
+            <label>
+                <input name="prefer" value="velocity channel" class="input-checkbox"  type="checkbox" checked>
+                Velocity between channels
+            </label>
+            <label>
+                <input name="prefer" value="user platform" class="input-checkbox"  type="checkbox">
+                User Platform
+            </label>
+            <label>
+                <input name="prefer" value="platform for payment" class="input-checkbox"  type="checkbox">
+                Platform for payment
+            </label>
+            <label>
+                <input name="prefer" value="Other premium channels" class="input-checkbox"  type="checkbox">
+                Other Premium Channels <span>Only for premium Users</span>
+            </label>
+            <label>
+                <input name="prefer" value="more local channels" class="input-checkbox"  type="checkbox">
+                More local channels
+            </label>
+            <label>
+                <input name="prefer" value="more kids channels" class="input-checkbox"  type="checkbox">
+                More kids  channels
+            </label>
+            <label>
+                <input name="prefer" value="more Sport channels" class="input-checkbox"  type="checkbox">
+                More Sport  channels
+            </label>
+        </div>
+        <div class="form-group">
+            <label>
+                <p>Any comments or suggestions?</p>
+                <textarea name="comments" id="comments" class="input-textarea" cols="30" rows="10" placeholder="Enter you comment here ..."></textarea>
+            </label>
+        </div>
+        <div class="form-group">
+            <label>
+                <button type="submit" id="submit" class="submit-button">Submit</button>
+            </label>
+        </div>
     </form>
 </div>
+<!-- end full page container  -->
 </body>
 </html>
